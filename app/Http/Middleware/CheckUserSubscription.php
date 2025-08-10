@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class CheckUserSubscription
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     */
+    public function handle($request, Closure $next)
+    {
+        $user = Auth::user();
+
+        $activePlan = $user->manualPayments()
+            ->where('status', 'approved')
+            ->latest()
+            ->first();
+
+        if (!$activePlan) {
+            return redirect()->route('manual-payment.create')->with('error', 'Please complete your payment to access this feature.');
+        }
+
+        return $next($request);
+    }
+}
