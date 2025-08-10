@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SkyVault Storage | 25GB Free Cloud Storage</title>
 
-  <link rel="stylesheet" href="{{url('public/client/css/icofont.min.css')}}" >
-  <link rel="stylesheet" href="{{url('public/client/css/popup.css')}}" >
+  <link rel="stylesheet" href="{{url('client/css/icofont.min.css')}}" >
+  <link rel="stylesheet" href="{{url('client/css/popup.css')}}" >
 
-  <link rel="stylesheet" href="{{url('public/client/css/swiper-bundle.min.css')}}" >
-  <link rel="stylesheet" href="{{url('public/client/css/video-modal.css')}}" >
-  <link rel="stylesheet" href="{{url('public/client/css/aos.css')}}" >
-  <link rel="stylesheet" href="{{url('public/client/css/style.css')}}" >
-  <link rel="icon" type="image/png" href="{{ asset('public/client/images/favicon.ico') }}">
+  <link rel="stylesheet" href="{{url('client/css/swiper-bundle.min.css')}}" >
+  <link rel="stylesheet" href="{{url('client/css/video-modal.css')}}" >
+  <link rel="stylesheet" href="{{url('client/css/aos.css')}}" >
+  <link rel="stylesheet" href="{{url('client/css/style.css')}}" >
+  <link rel="icon" type="image/png" href="{{ asset('client/images/favicon.ico') }}">
   <meta name="description" content="Get 25GB free cloud storage with SkyVault Storage. Enjoy secure, reliable online file storage and easy access from any device for photos, documents, and more.">
     <!-- Meta Keywords (optional for SEO) -->
     <meta name="keywords" content="free cloud storage, 25GB storage, secure online storage, cloud file sharing, online data backup, reliable cloud solutions, encrypted file storage, accessible cloud platform">
@@ -25,7 +25,7 @@
       <!-- spinner -->
       <div class="w-90px h-90px border-5px border-t-blue border-r-blue border-b-blue-light border-l-blue-light rounded-full animate-spin-infinit"></div>
       <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-        <img src="{{url('public/client/images/pre.jpg')}}" alt="" class="h-10 w-10 block" >
+        <img src="{{url('client/images/pre.jpg')}}" alt="" class="h-10 w-10 block" >
       </div>
     </div>
     <!-- theme fixed shadow -->
@@ -91,29 +91,29 @@
       @yield('content')
     </main>
     @include('layouts.footer')
-    <script src="{{url('public/client/js/swiper-bundle.min.js')}}"></script>
-    <script src="{{url('public/client/js/isotope.pkgd.min.js')}}"></script>
-    <script src="{{url('public/client/js/accordion.js')}}"></script>
-    <script src="{{url('public/client/js/chart.js')}}"></script>
-    <script src="{{url('public/client/js/count.js')}}"></script>
-    <script src="{{url('public/client/js/countdown.js')}}"></script>
-    <script src="{{url('public/client/js/counterup.js')}}"></script>
-    <script src="{{url('public/client/js/dropdown.js')}}"></script>
-    <script src="{{url('public/client/js/filter.js')}}"></script>
-    <script src="{{url('public/client/js/mobileMenu.js')}}"></script>
-    <script src="{{url('public/client/js/modal.js')}}"></script>
-    <script src="{{url('public/client/js/popup.js')}}"></script>
-    <script src="{{url('public/client/js/preloader.js')}}"></script>
-    <script src="{{url('public/client/js/scrollUp.js')}}"></script>
-    <script src="{{url('public/client/js/slider.js')}}"></script>
-    <script src="{{url('public/client/js/smoothScroll.js')}}"></script>
-    <script src="{{url('public/client/js/stickyHeader.js')}}"></script>
-    <script src="{{url('public/client/js/tabs.js')}}"></script>
-    <script src="{{url('public/client/js/theme.js')}}"></script>
-    <script src="{{url('public/client/js/videoModal.js')}}"></script>
-    <script  src="{{url('public/client/js/vanilla-tilt.js')}}"></script>
-    <script  src="{{url('public/client/js/aos.js')}}"></script>
-    <script src="{{url('public/client/js/main.js')}}"></script>
+    <script src="{{url('client/js/swiper-bundle.min.js')}}"></script>
+    <script src="{{url('client/js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url('client/js/accordion.js')}}"></script>
+    <script src="{{url('client/js/chart.js')}}"></script>
+    <script src="{{url('client/js/count.js')}}"></script>
+    <script src="{{url('client/js/countdown.js')}}"></script>
+    <script src="{{url('client/js/counterup.js')}}"></script>
+    <script src="{{url('client/js/dropdown.js')}}"></script>
+    <script src="{{url('client/js/filter.js')}}"></script>
+    <script src="{{url('client/js/mobileMenu.js')}}"></script>
+    <script src="{{url('client/js/modal.js')}}"></script>
+    <script src="{{url('client/js/popup.js')}}"></script>
+    <script src="{{url('client/js/preloader.js')}}"></script>
+    <script src="{{url('client/js/scrollUp.js')}}"></script>
+    <script src="{{url('client/js/slider.js')}}"></script>
+    <script src="{{url('client/js/smoothScroll.js')}}"></script>
+    <script src="{{url('client/js/stickyHeader.js')}}"></script>
+    <script src="{{url('client/js/tabs.js')}}"></script>
+    <script src="{{url('client/js/theme.js')}}"></script>
+    <script src="{{url('client/js/videoModal.js')}}"></script>
+    <script  src="{{url('client/js/vanilla-tilt.js')}}"></script>
+    <script  src="{{url('client/js/aos.js')}}"></script>
+    <script src="{{url('client/js/main.js')}}"></script>
 @yield('script')
 </body>
 </html>
